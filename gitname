@@ -1,0 +1,20 @@
+!#/bin/bash
+
+# Problem:
+# Mange studerende indtaster ubrugelige links
+# på designede sider
+#
+
+# interaktion med brugeren
+echo Indtast git brugernavn
+echo Så vil jeg returnere de to links
+
+# read læser input fra brugeren
+read gitbruger
+echo Indtast evt mappe
+read mappe
+
+# returnerer links til github pages og repo
+echo Her er brugerens repo og pages:
+echo https://${gitbruger}.github.io/${mappe}
+echo https://github.com/${gitbruger}/${mappe}
